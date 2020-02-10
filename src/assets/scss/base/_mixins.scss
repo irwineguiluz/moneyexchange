@@ -1,0 +1,57 @@
+@mixin large-mobile {
+  @media screen and (min-width: $large-mobile) {
+    @content
+  }
+}
+
+@mixin maxDesktop {
+  @media screen and (max-width: $desktop) {
+    @content
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content
+  }
+}
+
+@mixin widescreen {
+  @media screen and (min-width: $widescreen) {
+    @content
+  }
+}
+
+@mixin fullhd {
+  @media screen and (min-width: $fullhd) {
+    @content
+  }
+}
+
+@mixin form-reset-general {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  vertical-align: middle; // IE6,IE7
+  white-space: normal;
+  line-height: inherit;
+  background: none;
+  &:focus {
+    outline: 0;
+  }
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset;
+  }
+
+  /* Browsers have different default form fonts */
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
