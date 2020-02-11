@@ -1,3 +1,48 @@
-body {
-  background-color: $amber;
+.footer__container {
+  background-color: $blue;
+  color: $white;
+  padding: 50px 0 150px 0;
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+
+    .footer__sections-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 992px;
+      width: 100%;
+
+      @include tablet {
+        flex-direction: row;
+      }
+
+      .footer-section {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        .title {
+          .anchor {
+            color: $blue-font;
+            text-decoration: none;
+          }
+        }
+
+        .social-networks {
+          .social-network__item {
+            color: $white;
+            margin-right: 10px;
+            text-decoration: none;
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }

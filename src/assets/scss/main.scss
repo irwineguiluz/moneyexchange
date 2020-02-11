@@ -1,5 +1,8 @@
 @import 'base/variables';
-@import 'base/variables';
+@import 'base/mixins';
 
+@import 'general';
 @import 'components/header';
 @import 'components/footer';
+
+@import 'screens/landing';
