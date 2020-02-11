@@ -1,5 +1,5 @@
 .currencies-converter__container {
-  background-color: $white;
+  background-color: $aqua;
   padding: 100px 0;
 
   .currencies-converter__wrapper {
@@ -57,6 +57,7 @@
             border-radius: 0px;
             box-shadow: none;
             color: $white;
+            cursor: pointer;
             outline: 0;
             padding: 10px 20px;
 

@@ -1,6 +1,6 @@
 .header__container {
   background-color: $white;
-  box-shadow: 0px -25px 31px 16px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px -25px 31px 16px rgba(0, 0, 0, 0.06);
   position: relative;
 
   .header__wrapper {
@@ -12,6 +12,10 @@
       font-size: 24px;
       font-weight: 700;
       letter-spacing: -2.5px;
+
+      span {
+        color: $blue;
+      }
     }
   }
 
@@ -27,13 +31,20 @@
       .nav__menu {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: 50px;
 
         .nav__menu-item {
-          color: $blue-font;
+          color: $black;
+          flex: 1 50%;
           font-weight: 700;
+          text-align: center;
           text-decoration: none;
+
+          @include large-mobile {
+            flex: none;
+          }
         }
       }
     }

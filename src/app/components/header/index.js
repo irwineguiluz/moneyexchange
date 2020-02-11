@@ -17,7 +17,7 @@ const links = [{
 const Header = () => (
   <header className="header__container">
     <div className="header__wrapper">
-      <div className="header__logo">moneyXchange</div>
+      <div className="header__logo">money<span>X</span>change</div>
     </div>
     <div className="nav__container">
       <div className="nav__wrapper">
