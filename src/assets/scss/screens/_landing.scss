@@ -1,6 +1,10 @@
 .currencies-converter__container {
   background-color: $aqua;
-  padding: 100px 0;
+  padding: 80px 0;
+
+  @include tablet {
+    padding: 100px 0;
+  }
 
   .currencies-converter__wrapper {
     display: flex;
@@ -21,26 +25,38 @@
           font-size: 16px;
           justify-content: center;
           margin: 0 0 50px 0;
+          text-align: center;
+
+          @include tablet {
+            margin: 0 0 100px 0;
+          }
         }
 
         .currencies-inputs {
           display: flex;
+          flex-direction: column;
           justify-content: space-around;
           margin: 0 0 50px 0;
 
+          @include tablet {
+            flex-direction: row;
+            margin: 0 0 100px 0;
+          }
+
           .currency-input__wrapper {
-            width: 50%;
+            width: 100%;
 
             @include tablet {
               padding: 0 10%;
+              width: 50%;
             }
 
             .currency-input {
               background-color: $blue-input;
               border: 0;
               height: 25px;
-              padding: 10px 0;
-              width: 100%;
+              padding: 10px;
+              width: calc(100% - 20px);
 
               @include tablet {
                 padding: 10px;
@@ -57,13 +73,15 @@
           display: flex;
           justify-content: center;
 
-          button {
+          .btn {
             background-color: $blue;
             border: 0;
             border-radius: 0px;
             box-shadow: none;
             color: $white;
             cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
             outline: 0;
             padding: 10px 20px;
 

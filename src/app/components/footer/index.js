@@ -1,29 +1,29 @@
 import React from 'react';
 
 const links = [{
-    'url': '#',
-    'label': 'Home',
+  'url': '#',
+  'label': 'Home',
 }, {
-    'url': '#about-us',
-    'label': 'About us',
+  'url': '#about-us',
+  'label': 'About us',
 }, {
-    'url': '#currencies',
-    'label': 'Currencies',
+  'url': '#currencies',
+  'label': 'Currencies',
 }];
 
 const socialNetworks = {
-    'title': 'Follow us',
-    'url': '#follow',
-    'icons': [{
-        'url': '#instagram',
-        'label': 'IG',
-    }, {
-        'url': '#facebook',
-        'label': 'FB',
-    }, {
-        'url': '#twitter',
-        'label': 'TW',
-    }],
+  'title': 'Follow us',
+  'url': '#follow',
+  'icons': [{
+    'url': '#instagram',
+    'label': 'IG',
+  }, {
+    'url': '#facebook',
+    'label': 'FB',
+  }, {
+    'url': '#twitter',
+    'label': 'TW',
+  }],
 };
 
 const Footer = () => (

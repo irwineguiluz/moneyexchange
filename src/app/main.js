@@ -12,15 +12,15 @@ class Main extends Component {
       <main>
         <Router>
         <div>
-            <Switch>
-                <Route path="/">
-                    <Landing />
-                </Route>
-            </Switch>
+          <Switch>
+            <Route path="/">
+              <Landing />
+            </Route>
+          </Switch>
         </div>
         </Router>
       </main>
-    )
+    );
   }
 }
 
