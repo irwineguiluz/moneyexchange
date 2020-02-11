@@ -83,7 +83,12 @@
             font-size: 18px;
             font-weight: 600;
             outline: 0;
-            padding: 10px 20px;
+            padding: 12.5px 20px;
+            width: 100%;
+
+            @include large-mobile {
+              width: 250px;
+            }
 
             &:hover {
               background-color: $gray;
