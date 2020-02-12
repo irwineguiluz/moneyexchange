@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import CurrencyFormat from 'react-currency-format';
+import axios from 'axios';
 
 class Landing extends Component {
   state = {
@@ -18,9 +19,16 @@ class Landing extends Component {
 
   calculateCurrency = () => {
     if (this.state.dollarsInput > 0) {
-      this.setState({
-        eurosInput: this.state.dollarsInput,
-      });
+      axios.get(`http://moneyexchange-api.test/api/calculate`)
+        .then(res => {
+          let response = res.data;
+          let rates = JSON.parse(response.ratesFeed.rates);
+          let euroRate = rates.rates.EUR;
+          let eurosTotal = this.state.dollarsInput * euroRate;
+
+          this.setState({ eurosInput: eurosTotal });
+        });
+
     } else {
       this.resetInputs();
     }
