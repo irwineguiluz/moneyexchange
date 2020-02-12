@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+import CurrencyFormat from 'react-currency-format';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-import CurrencyFormat from 'react-currency-format';
-import axios from 'axios';
+import appConstants from '../../constants/app';
 
 class Landing extends Component {
   state = {
@@ -19,7 +20,7 @@ class Landing extends Component {
 
   calculateCurrency = () => {
     if (this.state.dollarsInput > 0) {
-      axios.get(`http://moneyexchange-api.test/api/calculate`)
+      axios.get(`${appConstants.API_URL}/calculate`)
         .then(res => {
           let response = res.data;
           let rates = JSON.parse(response.ratesFeed.rates);

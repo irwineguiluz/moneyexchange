@@ -1,0 +1,5 @@
+const appConstants = {
+  API_URL: '[INSERT API URL] + api', // example-> http://example.com/api
+};
+
+export default appConstants;
