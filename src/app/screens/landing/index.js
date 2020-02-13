@@ -19,8 +19,16 @@ class Landing extends Component {
   }
 
   calculateCurrency = () => {
+    const config = {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + localStorage.getItem('token')
+      },
+      data: {}
+    };
+
     if (this.state.dollarsInput > 0) {
-      axios.get(`${appConstants.API_URL}/calculate`)
+      axios.get(`${appConstants.API_URL}/calculate`, config)
         .then(res => {
           let response = res.data;
           let rates = JSON.parse(response.ratesFeed.rates);

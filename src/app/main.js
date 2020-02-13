@@ -4,6 +4,7 @@ import {
     Switch,
     Route
   } from "react-router-dom";
+import Login from './screens/login';
 import Landing from './screens/landing';
 
 class Main extends Component {
@@ -13,8 +14,11 @@ class Main extends Component {
         <Router>
         <div>
           <Switch>
-            <Route path="/">
+            <Route path="/home">
               <Landing />
+            </Route>
+            <Route path="/">
+              <Login />
             </Route>
           </Switch>
         </div>
