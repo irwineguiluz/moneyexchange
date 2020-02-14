@@ -33,7 +33,6 @@ class Login extends Component {
           window.location.reload(true);
         })
         .catch(error => {
-          console.log('erraor', error.response.data.error)
           this.setState({
             errorMessage: error.response.data.error,
             email: '',
