@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-::-webkit-input-placeholder {
+.input-item.txt::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-:-ms-input-placeholder {
+.input-item.txt:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-::placeholder {
+.input-item.txt::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
