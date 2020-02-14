@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 body {
-    background-color: $gray;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+  background-color: $gray;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
