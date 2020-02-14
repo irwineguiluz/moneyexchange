@@ -1,6 +1,0 @@
-const constants = {
-  API_URL: 'http://fiu-api.test',
-  APP_URL: 'http://localhost'
-};
-
-export default constants
