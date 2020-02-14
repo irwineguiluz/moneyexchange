@@ -8,6 +8,8 @@ You must run these commands to deploy the project successfully
 
 After run last command, the landing will show in localhost:3000
 
+To access, first, you need to deploy [MoneyXChange API Project](https://github.com/ieguiluz/moneyexchange-api)
+
 Access data:
 - email: testy@moneyxchange.io
 - password: secret
